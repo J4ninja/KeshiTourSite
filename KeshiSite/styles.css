@@ -1,0 +1,341 @@
+
+
+#myCarousel .carousel-item img {
+    max-width: 100%;
+    height: auto;
+}     
+
+footer {
+    justify-content: center;
+    text-align: center;
+}
+
+.line {
+    height: 50px;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.container {
+    background-color: black;
+}
+
+/* .nav-item:hover {
+    text-decoration: underline white;
+} */
+
+.header {
+    background-color: black;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* Set column to full width */
+.col-12 {
+    padding: 0;
+}
+
+.album-text {
+    background-color: green;
+}
+
+.album-title {
+    font-family: 'Baskerville';
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+
+}
+
+.album-title .nav-link {
+    padding-right: 1em;
+    padding-left: 1em;
+    color: grey;
+    text-decoration: none;
+}
+
+.album-title .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.header-nav .nav-link {
+    font-family: 'Baskerville';
+}
+
+.header-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    font-family: 'Baskerville';
+    font-size: 30px;
+}
+
+.mini-album {
+    background-color: black;
+}
+
+.cd {
+    filter: brightness(0.8);
+    background-color: black;
+}
+
+.videos {
+    background-color: black;
+}
+
+.nav-icons {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 30px;
+}
+
+.foot {
+    font-family: 'Baskerville';font-size: 15px;
+    color: grey;
+    background-color: black;
+}
+
+.carousel-clothes {
+    background-color: black;
+}
+
+.side-carousel {
+    opacity: 50%;
+}
+
+.custom-button {
+    font-family: 'Baskerville';
+    
+}
+
+album-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.album-nav li {
+    flex-grow: 2;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+
+@media (max-width: 400px) {
+    .background-video {
+    height: 300px;
+    }
+    }
+    
+    @media (min-width: 577px) and (max-width: 768px) {
+    .background-video {
+    height: 600px;
+    }
+    }
+    
+    @media (min-width: 769px) and (max-width: 812px) {
+    .background-video {
+    height: 700px;
+    }
+    }
+    
+    @media (min-width: 813px) and (max-width: 896px) {
+    .background-video {
+    height: 750px;
+    }
+    }
+    
+    @media (min-width: 897px) and (max-width: 993px) {
+    .background-video {
+    height: 800px;
+    }
+    }
+    
+    @media (min-width: 994px) and (max-width: 1024px) {
+    .background-video {
+    height: 850px;
+    }
+    }
+    
+    @media (min-width: 1025px) and (max-width: 1200px) {
+    .background-video {
+    height: 900px;
+    }
+    }
+    
+    @media (min-width: 1201px) {
+    .background-video {
+    height: 1100px;
+    }
+    }
+
+
+
+
+    /* Style the navigation menu */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	height: 80px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* Style the logo image */
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 50px;
+	margin: 0 auto;
+}
+
+/* Remove the default list-style and spacing from the navigation menu */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+/* Style the navigation links */
+nav a {
+	color: #333;
+	font-size: 18px;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+/* Change the color of the navigation links on hover */
+nav a:hover {
+	color: #555;
+}
+
+/* Hamburger menu button */
+.hamburger {
+	display: none;
+}
+
+/* Style the menu links when the hamburger menu is open */
+nav .menu.open {
+	flex-direction: column;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav .menu.open li {
+	margin-bottom: 10px;
+}
+
+nav .menu.open a {
+	margin-right: 0;
+}
+
+/* Media queries */
+
+/* Hide the hamburger menu button on larger screens */
+@media only screen and (min-width: 768px) {
+	.hamburger {
+		display: none;
+	}
+  
+  /* Display left menu on left */
+	.left-menu {
+		display: flex;
+		flex-direction: row;
+	}
+
+  /* Display right menu on right */
+	.right-menu {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+  
+  /* Center logo */
+	.logo {
+		margin: 0 auto;
+	}
+
+  /* Add spacing between links */
+	nav a {
+		margin-right: 20px;
+	}
+}
+
+/* Collapse the navigation links into a hamburger menu on smaller screens */
+@media only screen and (max-width: 767px) {
+	nav ul {
+		flex-direction: column;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		padding: 20px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		display: none;
+	}
+
+	nav .menu.open {
+		display: flex;
+	}
+
+	nav .menu li {
+		margin-bottom: 10px;
+	}
+
+	nav a {
+		margin-right: 0;
+	}
+
+	.hamburger {
+		display: block;
+		background-color: transparent;
+		border: none;
+		font-size: 24px;
+		cursor: pointer;
+		position: absolute;
+		right: 30px;
+		top: 20px;
+	}
+
+	.hamburger:focus {
+		outline: none;
+	}
+
+	/* Hide the navigation menu when the hamburger menu is closed */
+	nav .menu:not(.open) {
+		display: none;
+	}
+}
